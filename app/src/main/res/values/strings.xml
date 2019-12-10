@@ -1,3 +1,57 @@
 <resources>
     <string name="app_name">ProjectAndroid</string>
+
+    <!-- Declaring items in Spinner containing Employee Type -->
+
+    <string-array name="etypes">
+
+        <item>Choose a type</item>
+        <item>Manager</item>
+        <item>Tester</item>
+        <item>Programmer</item>
+
+    </string-array>
+
+
+    <!-- Declaring items in Spinner containing Vehicle Colors -->
+
+    <string-array name="vcolors">
+
+        <item>Choose a Color</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Orange</item>
+        <item>Purple</item>
+        <item>Pink</item>
+        <item>Brown</item>
+        <item>White</item>
+        <item>Black</item>
+        <item>Beige</item>
+
+    </string-array>
+
+
+    <!-- Declaring ids to string items in Spinner containing Employee Type -->
+
+    <string name="manager">Manager</string>
+    <string name="tester">Tester</string>
+    <string name="programmer">Programmer</string>
+
+
+    <!-- Declaring ids to string items in Spinner containing Vehicle Colors -->
+
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+    <string name="orange">Orange</string>
+    <string name="purple">Purple</string>
+    <string name="pink">Pink</string>
+    <string name="brown">Brown</string>
+    <string name="white">White</string>
+    <string name="black">Black</string>
+    <string name="beige">Beige</string>
+
 </resources>
