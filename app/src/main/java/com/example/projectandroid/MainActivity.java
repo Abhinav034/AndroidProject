@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("Eighth One");
         arrayList.add("Ninth One");
         arrayList.add("Tenth One");
+        arrayList.add("Seventh One");
+        arrayList.add("Eighth One");
+        arrayList.add("Ninth One");
+        arrayList.add("Tenth One");
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, arrayList);
 
