@@ -14,12 +14,18 @@
         android:id="@+id/search_bar"
         />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        />
+
     <Button
         android:id="@+id/addButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ADD"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
