@@ -1,7 +1,10 @@
 package com.example.projectandroid;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Calendar;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
+import java.time.Year;
 import java.util.ArrayList;
 
 public class FormActivity extends AppCompatActivity {
@@ -66,12 +70,15 @@ public class FormActivity extends AppCompatActivity {
         });
 
         button.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onClick(View v) {
                 String selectedItem = emtype.getSelectedItem().toString();
                 String fname = firstname.getText().toString();
                 String lname = lastname.getText().toString();
-                String birthYear = birthyear.getText().toString();
+                int birth = Integer.valueOf(birthyear.getText().toString());
+                int val = Calendar.getInstance().get(Calendar.YEAR);
+                String age = String.valueOf(val-birth);
                 String empSalary = salary.getText().toString();
                 String oRate = occupationRate.getText().toString();
                 String eId = employeeId.getText().toString();
@@ -81,7 +88,7 @@ public class FormActivity extends AppCompatActivity {
 
                 if (selectedItem.contains("Manager")){
 
-                    System.out.println("################");
+                    System.out.println(val);
 
                 }
                 else if (selectedItem.contains("Tester")){
