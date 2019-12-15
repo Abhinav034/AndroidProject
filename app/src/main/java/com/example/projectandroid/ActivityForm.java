@@ -15,7 +15,7 @@ public class ActivityForm extends AppCompatActivity {
 
     RadioGroup vehiclesRadio;
     LinearLayout linearLayout;
-    LinearLayout nprojects;
+
     Spinner emtype;
 
     @SuppressLint("WrongViewCast")
@@ -28,7 +28,7 @@ public class ActivityForm extends AppCompatActivity {
 
         linearLayout = (LinearLayout) findViewById(R.id.SideCar);
 
-        //nprojects = (LinearLayout) findViewById(R.id.nprojects);
+        
 
         emtype = (Spinner) findViewById(R.id.emtype);
 

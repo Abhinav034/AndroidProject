@@ -37,9 +37,9 @@
             android:id="@+id/fname"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_weight="1"
-            android:text="First Name" />
+            android:gravity="center"
+            android:hint="First Name" />
 
     </LinearLayout>
 
@@ -59,13 +59,13 @@
             android:text="Employee Last name"
             android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/lname"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:text="Last Name" />
+       <EditText
+           android:id="@+id/lname"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:hint="Last Name" />
 
     </LinearLayout>
 
@@ -89,9 +89,9 @@
             android:id="@+id/byear"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_weight="1"
-            android:text="Birth Year" />
+            android:gravity="center"
+            android:hint="Birth Year" />
 
     </LinearLayout>
 
@@ -115,9 +115,8 @@
             android:id="@+id/salary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_weight="1"
-            android:text="First Name" />
+            android:gravity="center" />
 
     </LinearLayout>
 
@@ -141,9 +140,9 @@
             android:id="@+id/orate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_weight="1"
-            android:text="Occupation Rate" />
+            android:gravity="center"
+            android:hint="Occupation Rate" />
 
     </LinearLayout>
 
@@ -167,9 +166,9 @@
             android:id="@+id/eid"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_weight="1"
-            android:text="Employee ID" />
+            android:gravity="center"
+            android:hint="Employee ID" />
 
     </LinearLayout>
 
@@ -219,9 +218,8 @@
             android:id="@+id/nprojects"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_weight="1"
-            android:text="Number Of Projects" />
+            android:gravity="center" />
 
     </LinearLayout>
 
@@ -330,9 +328,9 @@
             android:id="@+id/vmodel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_weight="1"
-            android:text="Model" />
+            android:gravity="center"
+            android:hint="Model" />
 
     </LinearLayout>
 
@@ -356,9 +354,9 @@
             android:id="@+id/pnumber"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_weight="1"
-            android:text="Plate Number" />
+            android:gravity="center"
+            android:hint="Plate Number" />
 
     </LinearLayout>
 
