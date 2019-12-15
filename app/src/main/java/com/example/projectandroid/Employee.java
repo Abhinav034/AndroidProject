@@ -70,18 +70,12 @@ public class Employee {
 class Manager extends Employee{
 
     private String numberOfClients;
+    private Vehicle vehicle;
 
-    public Manager(String name, int age, String birthYear, String monthlySalary, String rate, String numberOfClients) {
+    public Manager(String name, int age, String birthYear, String monthlySalary, String rate, String numberOfClients, Vehicle vehicle) {
         super(name, age, birthYear, monthlySalary, rate);
         this.numberOfClients = numberOfClients;
-    }
-
-    public String getNumberOfClients() {
-        return numberOfClients;
-    }
-
-    public void setNumberOfClients(String numberOfClients) {
-        this.numberOfClients = numberOfClients;
+        this.vehicle = vehicle;
     }
 }
 
