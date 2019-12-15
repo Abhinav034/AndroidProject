@@ -92,7 +92,7 @@ public class FormActivity extends AppCompatActivity {
 
                    // Manager manager = new Manager(name,age,eBirthyear,empSalary,oRate,);
 
-                    // vehicletype , number of projects
+                    // vehicletype , number of projects remaining
                 }
                 else if (selectedItem.contains("Tester")){
 
