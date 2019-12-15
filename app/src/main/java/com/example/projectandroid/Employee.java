@@ -7,6 +7,8 @@ public class Employee {
     private String birthYear;
     private String monthlySalary;
     private String rate;
+    private Vehicle vehicle;
+
 
     public Employee(String name, int age, String birthYear, String monthlySalary, String rate) {
         this.name = name;
@@ -14,6 +16,14 @@ public class Employee {
         this.birthYear = birthYear;
         this.monthlySalary = monthlySalary;
         this.rate = rate;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 
     public String getName() {

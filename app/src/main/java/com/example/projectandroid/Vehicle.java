@@ -47,3 +47,41 @@ public class Vehicle {
         this.category = category;
     }
 }
+
+class car extends Vehicle{
+
+   private String type;
+
+    public car(String make, String plate, String color, String category, String type) {
+
+        super(make, plate, color, category);
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+}
+
+class Motorcycle extends Vehicle{
+
+   private boolean sidecar;
+
+    public Motorcycle(String make, String plate, String color, String category, boolean sidecar) {
+        super(make, plate, color, category);
+        this.sidecar = sidecar;
+    }
+
+
+    public boolean isSidecar() {
+        return sidecar;
+    }
+
+    public void setSidecar(boolean sidecar) {
+        this.sidecar = sidecar;
+    }
+}
