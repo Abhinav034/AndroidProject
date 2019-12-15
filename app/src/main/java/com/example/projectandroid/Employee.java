@@ -1,3 +1,5 @@
+package com.example.projectandroid;
+
 public class Employee {
 
     private String name;
@@ -54,3 +56,4 @@ public class Employee {
         this.rate = rate;
     }
 }
+
