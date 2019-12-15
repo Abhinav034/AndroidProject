@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".FormActivity"></activity>
-        <activity android:name=".ActivityForm" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

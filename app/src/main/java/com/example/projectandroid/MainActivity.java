@@ -21,29 +21,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView = (ListView) findViewById(R.id.listView);
-
-        ArrayList<String> arrayList = new ArrayList<>();
-
-        arrayList.add("First One");
-        arrayList.add("Second One");
-        arrayList.add("Third One");
-        arrayList.add("Forth One");
-        arrayList.add("Fifth One");
-        arrayList.add("Sixth One");
-        arrayList.add("Seventh One");
-        arrayList.add("Eighth One");
-        arrayList.add("Ninth One");
-        arrayList.add("Tenth One");
-        arrayList.add("Seventh One");
-        arrayList.add("Eighth One");
-        arrayList.add("Ninth One");
-        arrayList.add("Tenth One");
-
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, arrayList);
-
-        listView.setAdapter(arrayAdapter);
-
+        listView = findViewById(R.id.listView);
+//
+//        ArrayList<String> arrayList = new ArrayList<>();
+//
+//        arrayList.add("First One");
+//        arrayList.add("Second One");
+//        arrayList.add("Third One");
+//        arrayList.add("Forth One");
+//        arrayList.add("Fifth One");
+//        arrayList.add("Sixth One");
+//        arrayList.add("Seventh One");
+//        arrayList.add("Eighth One");
+//        arrayList.add("Ninth One");
+//        arrayList.add("Tenth One");
+//        arrayList.add("Seventh One");
+//        arrayList.add("Eighth One");
+//        arrayList.add("Ninth One");
+//        arrayList.add("Tenth One");
+//
+//        ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_expandable_list_item_1, arrayList);
+//
+//        listView.setAdapter(arrayAdapter);
+//
         addButton = (Button) findViewById(R.id.addButton);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override

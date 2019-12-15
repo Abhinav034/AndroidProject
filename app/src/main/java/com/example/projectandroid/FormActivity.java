@@ -3,7 +3,6 @@ package com.example.projectandroid;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -18,13 +17,13 @@ public class FormActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_form2);
+        setContentView(R.layout.activity_form);
 
         vehiclesRadio = (RadioGroup) findViewById(R.id.vehiclesRadio);
 
         linearLayout = (LinearLayout) findViewById(R.id.SideCar);
 
-        //nprojects = (LinearLayout) findViewById(R.id.nprojects);
+
 
         emtype = (Spinner) findViewById(R.id.emtype);
 
