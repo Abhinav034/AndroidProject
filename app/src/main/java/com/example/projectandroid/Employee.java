@@ -57,3 +57,82 @@ public class Employee {
     }
 }
 
+class Manager extends Employee{
+
+    private String numberOfClients;
+
+    public Manager(String name, int age, String birthYear, String monthlySalary, String rate, String numberOfClients) {
+        super(name, age, birthYear, monthlySalary, rate);
+        this.numberOfClients = numberOfClients;
+    }
+
+    public String getNumberOfClients() {
+        return numberOfClients;
+    }
+
+    public void setNumberOfClients(String numberOfClients) {
+        this.numberOfClients = numberOfClients;
+    }
+}
+
+class Tester extends Employee{
+
+    private String numberOfBugs;
+
+    public Tester(String name, int age, String birthYear, String monthlySalary, String rate, String numberOfBugs) {
+        super(name, age, birthYear, monthlySalary, rate);
+        this.numberOfBugs = numberOfBugs;
+    }
+
+    public String getNumberOfBugs() {
+        return numberOfBugs;
+    }
+
+    public void setNumberOfBugs(String numberOfBugs) {
+        this.numberOfBugs = numberOfBugs;
+    }
+}
+
+
+class Programmer extends Employee{
+
+    private String numberOfProjects;
+
+    public Programmer(String name, int age, String birthYear, String monthlySalary, String rate, String numberOfProjects) {
+        super(name, age, birthYear, monthlySalary, rate);
+        this.numberOfProjects = numberOfProjects;
+    }
+
+    public String getNumberOfProjects() {
+        return numberOfProjects;
+    }
+
+    public void setNumberOfProjects(String numberOfProjects) {
+        this.numberOfProjects = numberOfProjects;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
