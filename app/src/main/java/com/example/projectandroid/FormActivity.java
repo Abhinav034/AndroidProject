@@ -76,9 +76,11 @@ public class FormActivity extends AppCompatActivity {
                 String selectedItem = emtype.getSelectedItem().toString();
                 String fname = firstname.getText().toString();
                 String lname = lastname.getText().toString();
+                String name = fname+" "+lname;
+                String eBirthyear = birthyear.getText().toString();
                 int birth = Integer.valueOf(birthyear.getText().toString());
                 int val = Calendar.getInstance().get(Calendar.YEAR);
-                String age = String.valueOf(val-birth);
+                int age = val-birth;
                 String empSalary = salary.getText().toString();
                 String oRate = occupationRate.getText().toString();
                 String eId = employeeId.getText().toString();
@@ -88,8 +90,9 @@ public class FormActivity extends AppCompatActivity {
 
                 if (selectedItem.contains("Manager")){
 
-                    System.out.println(val);
+                   // Manager manager = new Manager(name,age,eBirthyear,empSalary,oRate,);
 
+                    // vehicletype , number of projects
                 }
                 else if (selectedItem.contains("Tester")){
 
