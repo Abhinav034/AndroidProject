@@ -174,10 +174,7 @@ class Programmer extends Employee{
         this.numberOfProjects = numberOfProjects;
     }
 
-    public String toString(){
-        StringBuilder stringBuilder;
-        return "";
-    }
+
 
 }
 

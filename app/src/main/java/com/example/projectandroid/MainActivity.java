@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity implements Serializable {
                         intent.putExtra("type"," - Type: Without SideCar\n");
                 }
 
-                intent.putExtra("rate", "Occupation Rate: "+e.getOccupationRate()+"\n");
-                intent.putExtra("income","Annual Income: " +(e.getMonthlySalary())+"\n");
+                intent.putExtra("rate", "Occupation Rate: "+e.getOccupationRate()+"%"+"\n");
+                intent.putExtra("income","Annual Income:$ " +(e.getMonthlySalary())+"\n");
                 intent.putExtra("progress","He/She has completed: "+e.getNumberOfProjects());
 
                 startActivity(intent);

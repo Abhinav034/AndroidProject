@@ -16,7 +16,7 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
 
-        s += intent.getStringExtra("name");
+        s = intent.getStringExtra("name");
         s += intent.getStringExtra("age");
         s += intent.getStringExtra("vehicle");
         s += intent.getStringExtra("detail");
