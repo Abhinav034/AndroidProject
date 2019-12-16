@@ -58,9 +58,6 @@
     <string name="Sedan">Sedan</string>
 
 
-
-
-
     <!-- Declaring ids to string items in Spinner containing Vehicle Colors -->
 
     <string name="red">Red</string>
