@@ -1,5 +1,7 @@
 package com.example.projectandroid;
 
+import java.util.Calendar;
+
 public class Employee {
 
     private String firstName, lastName;
@@ -71,8 +73,20 @@ public class Employee {
     }
 
     public void setOccupationRate(String occupationRate) {
-        this.occupationRate = occupationRate;
+        int or = Integer.parseInt(occupationRate);
+        if(or < 10)
+            this.occupationRate = "10";
+        else if (or > 100)
+            this.occupationRate = "100";
+        else
+            this.occupationRate = occupationRate;
+
     }
+
+
+
+
+
 
     public Employee() {
 
@@ -89,7 +103,7 @@ public class Employee {
 
 
     public int getAge() {
-        return age;
+        return Calendar.getInstance().get(Calendar.YEAR) - Integer.parseInt(getBirthYear());
     }
 
     public void setAge(int age) {

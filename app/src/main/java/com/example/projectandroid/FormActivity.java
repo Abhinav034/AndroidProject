@@ -129,7 +129,7 @@ public class FormActivity extends AppCompatActivity implements Serializable {
                 employee.setOccupationRate(occupationRate.getText().toString());
                 employee.setEmployeeId(employeeId.getText().toString());
                 employee.setNumberOfProjects(projects.getText().toString());
-
+                employee.setType(selectedEmployeeType);
                 if (vehicleType.equals("Bike")){
                     Motorcycle mc = new Motorcycle();
                     mc.setModel(model.getText().toString());
