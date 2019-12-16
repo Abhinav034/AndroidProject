@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         listView = findViewById(R.id.listView);
         listView.setAdapter(adapter_customList);
 
-        addButton = (Button) findViewById(R.id.addButton);
+        addButton =  findViewById(R.id.addButton);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode , resultCode ,data);
         adapter_customList.notifyDataSetChanged();
     }
 
