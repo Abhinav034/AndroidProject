@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         arraylist = new ArrayList<>();
-        adapter_customList = new Adapter_CustomList(getApplicationContext(),arraylist);
+        adapter_customList = new Adapter_CustomList(this,arraylist);
 
 
 

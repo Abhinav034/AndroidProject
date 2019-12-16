@@ -77,7 +77,7 @@ public class FormActivity extends AppCompatActivity implements Serializable {
                 }
                 else if (checkedId == R.id.car)
                 {   vehicleType = "Car";
-                    linearLayout1.setVisibility(View.INVISIBLE);
+                    linearLayout1.setVisibility(View.VISIBLE);
                     linearLayout2.setVisibility(View.GONE);
                 }
             }
@@ -169,9 +169,7 @@ public class FormActivity extends AppCompatActivity implements Serializable {
     private void sendData(Employee employee) {
         setResult(Activity.RESULT_OK);
         finish();
-//        Intent i = new Intent(getApplicationContext(),MainActivity.class);
-//        i.putExtra("list",employeeList);
-//        startActivity(i);
+
 
     }
 
