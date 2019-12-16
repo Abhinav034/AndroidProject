@@ -1,5 +1,6 @@
 package com.example.projectandroid;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
     private Button addButton;
     ListView listView;
     static ArrayList<Employee> arraylist = new ArrayList<>();
+    Adapter_CustomList adapter_customList;
 
 
 
@@ -25,11 +27,12 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         arraylist = new ArrayList<>();
-
+        adapter_customList = new Adapter_CustomList(getApplicationContext(),arraylist);
 
 
 
         listView = findViewById(R.id.listView);
+        listView.setAdapter(adapter_customList);
 
         addButton = (Button) findViewById(R.id.addButton);
         addButton.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +46,11 @@ public class MainActivity extends AppCompatActivity implements Serializable {
 
 
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        adapter_customList.notifyDataSetChanged();
     }
 
     public void openForm(){

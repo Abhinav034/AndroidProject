@@ -59,6 +59,7 @@ public class Vehicle {
     public void setCategory(String category) {
         this.category = category;
     }
+
 }
 
 class Car extends Vehicle {

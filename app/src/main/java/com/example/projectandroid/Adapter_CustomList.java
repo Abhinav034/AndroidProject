@@ -44,20 +44,13 @@ public class Adapter_CustomList extends BaseAdapter {
                     inflate(R.layout.activity_custom_list, parent, false);
         }
 
-        // get current item to be displayed
         Employee currentItem = (Employee) getItem(position);
-
-        // get the TextView for item name and item description
         TextView textViewName = (TextView)
                 convertView.findViewById(R.id.textView4);
         TextView textViewID = (TextView)
                 convertView.findViewById(R.id.textView5);
-
-        //sets the text for item name and item description from the current item object
         textViewName.setText(currentItem.getFirstName());
         textViewID.setText(currentItem.getEmployeeId());
-
-        // returns the view for the current row
         return convertView;
     }
 }
