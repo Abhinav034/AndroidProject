@@ -58,7 +58,7 @@ public class FormActivity extends AppCompatActivity implements Serializable {
         typeToBeChange = findViewById(R.id.type_to_be_change);
          model = findViewById(R.id.vmodel);
          plateNumber = findViewById(R.id.pnumber);
-        vehiclesRadio = (RadioGroup) findViewById(R.id.vehiclesRadio);
+        vehiclesRadio = findViewById(R.id.vehiclesRadio);
         linearLayout1 = findViewById(R.id.SideCar);
         cartype = findViewById(R.id.carType);
         linearLayout2 = findViewById(R.id.layout_car);
@@ -77,8 +77,8 @@ public class FormActivity extends AppCompatActivity implements Serializable {
                 }
                 else if (checkedId == R.id.car)
                 {   vehicleType = "Car";
-                    linearLayout1.setVisibility(View.VISIBLE);
-                    linearLayout2.setVisibility(View.GONE);
+                   linearLayout1.setVisibility(View.GONE);
+                   linearLayout2.setVisibility(View.VISIBLE);
                 }
             }
         });
