@@ -2,6 +2,7 @@ package com.example.projectandroid;
 
 public class Vehicle {
     private String make;
+    private String model;
     private String plate;
     private String color;
     private String category;
@@ -14,6 +15,18 @@ public class Vehicle {
         this.category = category;
     }
 
+    public Vehicle() {
+
+
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
 
     public String getMake() {
         return make;
@@ -48,11 +61,14 @@ public class Vehicle {
     }
 }
 
-class car extends Vehicle{
+class Car extends Vehicle {
 
-   private String type;
+    public Car() {
+    }
 
-    public car(String make, String plate, String color, String category, String type) {
+    private String type;
+
+    public Car(String make, String plate, String color, String category, String type) {
 
         super(make, plate, color, category);
         this.type = type;
@@ -67,9 +83,13 @@ class car extends Vehicle{
     }
 }
 
-class Motorcycle extends Vehicle{
+class Motorcycle extends Vehicle {
 
-   private boolean sidecar;
+    private boolean sidecar;
+
+    public Motorcycle() {
+
+    }
 
     public Motorcycle(String make, String plate, String color, String category, boolean sidecar) {
         super(make, plate, color, category);

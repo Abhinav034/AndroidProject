@@ -31,6 +31,17 @@
         <item>Beige</item>
 
     </string-array>
+    <string-array name="cartypes">
+
+        <item>Car type</item>
+        <item>Sport</item>
+        <item>SUV</item>
+        <item>Hatchback</item>
+        <item>Minivan</item>
+        <item>Sedan</item>
+
+
+    </string-array>
 
 
     <!-- Declaring ids to string items in Spinner containing Employee Type -->
@@ -38,6 +49,16 @@
     <string name="manager">Manager</string>
     <string name="tester">Tester</string>
     <string name="programmer">Programmer</string>
+
+
+    <string name="Sport">Sport</string>
+    <string name="Suv">SUV</string>
+    <string name="Hatchback">Hatchback</string>
+    <string name="Minivan">Minivan</string>
+    <string name="Sedan">Sedan</string>
+
+
+
 
 
     <!-- Declaring ids to string items in Spinner containing Vehicle Colors -->
@@ -53,5 +74,7 @@
     <string name="white">White</string>
     <string name="black">Black</string>
     <string name="beige">Beige</string>
+    <string name="registration_form">Registration Form</string>
+    <string name="register">Register</string>
 
 </resources>

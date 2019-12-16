@@ -2,20 +2,71 @@ package com.example.projectandroid;
 
 public class Employee {
 
-    private String name;
+    private String firstName, lastName;
+    private String employeeId;
+    private String numberOfProjects;
     private int age;
     private String birthYear;
     private String monthlySalary;
-    private String rate;
+    private String occupationRate;
     private Vehicle vehicle;
 
 
-    public Employee(String name, int age, String birthYear, String monthlySalary, String rate) {
-        this.name = name;
+    public Employee(String firstName, String lastName, String employeeId, String numberOfProjects, int age, String birthYear, String monthlySalary, String occupationRate, Vehicle vehicle) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.employeeId = employeeId;
+        this.numberOfProjects = numberOfProjects;
         this.age = age;
         this.birthYear = birthYear;
         this.monthlySalary = monthlySalary;
-        this.rate = rate;
+        this.occupationRate = occupationRate;
+        this.vehicle = vehicle;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    public String getNumberOfProjects() {
+        return numberOfProjects;
+    }
+
+    public void setNumberOfProjects(String numberOfProjects) {
+        this.numberOfProjects = numberOfProjects;
+    }
+
+    public String getOccupationRate() {
+        return occupationRate;
+    }
+
+    public void setOccupationRate(String occupationRate) {
+        this.occupationRate = occupationRate;
+    }
+
+    public Employee() {
+
+
     }
 
     public Vehicle getVehicle() {
@@ -26,13 +77,6 @@ public class Employee {
         this.vehicle = vehicle;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public int getAge() {
         return age;
@@ -58,13 +102,6 @@ public class Employee {
         this.monthlySalary = monthlySalary;
     }
 
-    public String getRate() {
-        return rate;
-    }
-
-    public void setRate(String rate) {
-        this.rate = rate;
-    }
 }
 
 class Manager extends Employee{
@@ -73,7 +110,6 @@ class Manager extends Employee{
     private Vehicle vehicle;
 
     public Manager(String name, int age, String birthYear, String monthlySalary, String rate, String numberOfClients, Vehicle vehicle) {
-        super(name, age, birthYear, monthlySalary, rate);
         this.numberOfClients = numberOfClients;
         this.vehicle = vehicle;
     }
@@ -84,7 +120,6 @@ class Tester extends Employee{
     private String numberOfBugs;
 
     public Tester(String name, int age, String birthYear, String monthlySalary, String rate, String numberOfBugs) {
-        super(name, age, birthYear, monthlySalary, rate);
         this.numberOfBugs = numberOfBugs;
     }
 
@@ -103,7 +138,7 @@ class Programmer extends Employee{
     private String numberOfProjects;
 
     public Programmer(String name, int age, String birthYear, String monthlySalary, String rate, String numberOfProjects) {
-        super(name, age, birthYear, monthlySalary, rate);
+
         this.numberOfProjects = numberOfProjects;
     }
 
@@ -114,6 +149,12 @@ class Programmer extends Employee{
     public void setNumberOfProjects(String numberOfProjects) {
         this.numberOfProjects = numberOfProjects;
     }
+
+    public String toString(){
+        StringBuilder stringBuilder;
+        return "";
+    }
+
 }
 
 

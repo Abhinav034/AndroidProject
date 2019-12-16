@@ -9,41 +9,28 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Serializable {
 
     private Button addButton;
     ListView listView;
+    static ArrayList<Employee> arraylist = new ArrayList<>();
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        arraylist = new ArrayList<>();
+
+
+
 
         listView = findViewById(R.id.listView);
-//
-//        ArrayList<String> arrayList = new ArrayList<>();
-//
-//        arrayList.add("First One");
-//        arrayList.add("Second One");
-//        arrayList.add("Third One");
-//        arrayList.add("Forth One");
-//        arrayList.add("Fifth One");
-//        arrayList.add("Sixth One");
-//        arrayList.add("Seventh One");
-//        arrayList.add("Eighth One");
-//        arrayList.add("Ninth One");
-//        arrayList.add("Tenth One");
-//        arrayList.add("Seventh One");
-//        arrayList.add("Eighth One");
-//        arrayList.add("Ninth One");
-//        arrayList.add("Tenth One");
-//
-//        ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_expandable_list_item_1, arrayList);
-//
-//        listView.setAdapter(arrayAdapter);
-//
+
         addButton = (Button) findViewById(R.id.addButton);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
                 openForm();
             }
         });
+
+
+
+
+
     }
 
     public void openForm(){
