@@ -6,22 +6,32 @@ public class Employee {
     private String employeeId;
     private String numberOfProjects;
     private int age;
+    private String type;
     private String birthYear;
     private String monthlySalary;
     private String occupationRate;
     private Vehicle vehicle;
 
 
-    public Employee(String firstName, String lastName, String employeeId, String numberOfProjects, int age, String birthYear, String monthlySalary, String occupationRate, Vehicle vehicle) {
+    public Employee(String firstName, String lastName, String employeeId, String numberOfProjects, int age, String type, String birthYear, String monthlySalary, String occupationRate, Vehicle vehicle) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.employeeId = employeeId;
         this.numberOfProjects = numberOfProjects;
         this.age = age;
+        this.type = type;
         this.birthYear = birthYear;
         this.monthlySalary = monthlySalary;
         this.occupationRate = occupationRate;
         this.vehicle = vehicle;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getFirstName() {
