@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
                 Employee e  = arraylist.get(position);
 
                 StringBuilder stringBuilder = new StringBuilder();
-                intent.putExtra("name","Name: "+ e.getFirstName() +" "+e.getLastName()+", a"+ e.getType() +"\n");
+                intent.putExtra("name","Name: "+ e.getFirstName() +" "+e.getLastName()+", - "+ e.getType() +"\n");
                 intent.putExtra("age","Age: "+(e.getAge())+"\n");
                 intent.putExtra("vehicle","Employee has: " +e.getVehicle().getCategory()+"\n");
                 intent.putExtra("detail", "Model: "+e.getVehicle().getModel()+"\n"
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {
 
                 if (e.getVehicle().getCategory().equals("Car")){
 
-                    intent.putExtra("type"," - Type"+((Car) e.getVehicle()).getCategory()+"\n");
+                    intent.putExtra("type"," - Type - "+((Car) e.getVehicle()).getCategory()+"\n");
 
                 }
                 else
