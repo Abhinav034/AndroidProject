@@ -61,6 +61,7 @@ public class FormActivity extends AppCompatActivity implements Serializable {
         vehiclesRadio = (RadioGroup) findViewById(R.id.vehiclesRadio);
         linearLayout1 = findViewById(R.id.SideCar);
         cartype = findViewById(R.id.carType);
+        linearLayout2 = findViewById(R.id.layout_car);
         emtype =  findViewById(R.id.emtype);
         color = findViewById(R.id.vcolor);
         sideCarRadio = findViewById(R.id.sidecarRadio);
